@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+.mainContent {
+    flex: 1;
+    background-color: $gray50;
+    padding: 1vh 2vw;
+}
+
+.displayArea {
+    flex: 1;
+    border: 0.1px solid #212121
+}

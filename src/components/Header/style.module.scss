@@ -1,15 +1,24 @@
-@import '../../styles/colors';
+@import "../../styles/colors";
 
 .container {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 
 .headerContainer {
-    background-color: $primary-color;
-    flex-direction: row;
-    max-height: 10vh;
-    min-height: 10vh;
+  background-color: $primary-color;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  max-height: 15vh;
+}
+
+.headerRowContainer {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5% 0;
 }
 
 .imgContainer {
@@ -21,22 +30,22 @@
 }
 
 .img {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .titleContainer {
-    flex: 1;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .title {
-    color: $white50;
-    font-size: 2rem;
-    font-weight: 700;
-    display: flex;
-    margin: 0;
+  color: $gray50;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  margin: 0;
 }
