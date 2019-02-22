@@ -1,0 +1,40 @@
+@import '../../../../styles/colors.scss';
+
+.newsElementContainer {
+    flex: 1 1;
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: 1px solid $gray300;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1% 2%;
+}
+
+.newsElementRow {
+    flex: 1;
+    flex-flow: row nowrap;
+    display: flex;
+    padding: 0.25% 0;
+}
+
+.newsElementRowTitle {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.newsElementSideData {
+    color: $gray700;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid $gray700;
+    padding-left: 1em;
+    margin-right: 1em;
+    flex: 1;
+    display: inline-flex;
+}
+
+.firstSideData {
+    border-left: 0;
+    padding-left: 0;
+}
