@@ -49,3 +49,41 @@
   display: flex;
   margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .headerContainer {
+    flex: 1;
+    background-color: $header-color;
+    flex-direction: column;
+    display: flex;
+    max-height: 20vh;
+  }
+  .img {
+    height: 40px;
+    width: auto;
+  }
+  .title {
+    color: $gray50;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    margin: 0;
+  }
+  .headerRowContainer {
+    flex: 1;
+    margin: 1% 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 968px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}

@@ -21,3 +21,9 @@
 .searchBar:focus {
     outline: black auto 0;
 }
+
+@media only screen and (max-width: 600px) { 
+  .searchBarContainer {
+    padding: 1vh 5vw;
+  }
+}
