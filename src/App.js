@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Header from "./containers/Header";
 import MainArea from "./containers/MainArea";
-import { TextProvider } from './Context/SearchBarTextContext'
+import { TextProvider } from "./Context/SearchBarTextContext";
+import ArticlesProvider from "./containers/ArticlesProviderContainer";
+
 import "./App.scss";
 
 class App extends Component {
@@ -10,7 +12,9 @@ class App extends Component {
       <div className="app">
         <TextProvider>
           <Header />
-          <MainArea />
+          <ArticlesProvider>
+            <MainArea />
+          </ArticlesProvider>
         </TextProvider>
       </div>
     );
