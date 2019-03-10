@@ -1,21 +1,13 @@
 @import "../../styles/colors";
 
 .optionsBarContainer {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: $gray200;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $gray200;
 }
 
-.optionContainer {
-    flex: 1;
-    display: flex;
-    min-width: 10vw;
-    align-items: center;
-    justify-content: center;
-}
-
-@media only screen and (min-width: 1024px) {
-    .optionContainer {
-        max-width: 20%;
-    }
+@media only screen and (max-width: 425px) {
+  .optionsBarContainer {
+    flex-flow: column wrap;
+  }
 }
