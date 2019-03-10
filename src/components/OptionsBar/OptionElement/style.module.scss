@@ -1,0 +1,14 @@
+.optionContainer {
+  flex: 1;
+  display: flex;
+  min-width: 10vw;
+  margin: 2.5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .optionContainer {
+    max-width: 20%;
+  }
+}

@@ -36,7 +36,7 @@ export const hits = [
     comment_text: null,
     _tags: ["story"],
     num_comments: 2,
-    objectID: "1",
+    objectID: "2",
     _highlightResult: {
       title: {
         value: "X SSX",
@@ -64,7 +64,7 @@ export const hits = [
     comment_text: null,
     _tags: ["story"],
     num_comments: 2,
-    objectID: "1",
+    objectID: "3",
     _highlightResult: {
       title: {
         value: "Yada",
@@ -92,7 +92,7 @@ export const hits = [
     comment_text: null,
     _tags: ["story"],
     num_comments: 2,
-    objectID: "1",
+    objectID: "4",
     _highlightResult: {
       title: {
         value: "Y Combinator",

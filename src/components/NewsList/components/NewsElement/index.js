@@ -14,9 +14,10 @@ class NewsElement extends React.PureComponent {
         <div className={cs(styles.newsElementRow)}>
           {displayData.map((data, index) => (
             <p
+              key={index}
               className={cs([
                 styles.newsElementSideData,
-                index === 0 ? styles.firstSideData : false,
+                index === 0 ? styles.firstSideData : false
               ])}
             >
               {data}

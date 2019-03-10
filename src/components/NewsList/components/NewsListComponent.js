@@ -19,7 +19,7 @@ class NewsList extends React.PureComponent {
     return (
       <React.Fragment>
         {hits.map(hit => (
-          <NewsElement {...hit} />
+          <NewsElement key={hit.objectID} {...hit} />
         ))}
       </React.Fragment>
     );
