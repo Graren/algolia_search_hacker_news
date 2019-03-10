@@ -7,6 +7,11 @@
   justify-content: center;
 }
 
+.select {
+  padding: 1vh 1vw;
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 1024px) {
   .optionContainer {
     max-width: 20%;

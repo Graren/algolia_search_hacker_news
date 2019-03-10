@@ -14,8 +14,9 @@ class OptionsElement extends React.PureComponent {
       <div className={cs(styles.optionContainer)}>
         <select
           type="select"
-          onChange={this._onOptionsChange}
+          onChange={this._onChange}
           value={selectedOption}
+          className={cs(styles.select)}
         >
           {options.map(opt => (
             <option key={opt.key} value={opt.key}>
