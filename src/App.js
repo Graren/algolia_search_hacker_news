@@ -5,6 +5,7 @@ import OptionsBar from "./containers/OptionsBarContainer";
 import { TextProvider } from "./Context/SearchBarTextContext";
 import { OptionsProvider } from "./Context/OptionsContext";
 import ArticlesProvider from "./containers/ArticlesProviderContainer";
+import Footer from "./components/Footer";
 
 import "./App.scss";
 
@@ -20,6 +21,7 @@ class App extends Component {
               <MainArea />
             </ArticlesProvider>
           </OptionsProvider>
+          <Footer />
         </TextProvider>
       </div>
     );
