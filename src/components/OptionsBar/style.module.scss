@@ -1,6 +1,13 @@
 @import "../../styles/colors";
 
+.optionsBarWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $gray50;
+}
+
 .optionsBarContainer {
+  flex: 1;
   display: flex;
   flex-flow: row wrap;
   background-color: $gray200;
@@ -9,5 +16,11 @@
 @media only screen and (max-width: 425px) {
   .optionsBarContainer {
     flex-flow: column wrap;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .optionsBarContainer {
+    margin: 0 2vw;
   }
 }

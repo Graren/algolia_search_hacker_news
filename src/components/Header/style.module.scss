@@ -82,11 +82,21 @@
 @media only screen and (min-width: 768px) {
 }
 
-@media only screen and (min-width: 968px) {
+@media only screen and (min-width: 968px) and (max-width: 1440px) {
+  .headerRowContainer {
+    flex: 1;
+    margin: 1vh 0;
+  }
+
+  .headerContainer {
+    max-height: 15vh;
+    padding: 1vh;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .headerContainer {
     max-height: 15vh;
+    padding: 1vh;
   }
 }
