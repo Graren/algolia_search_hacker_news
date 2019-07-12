@@ -1,13 +1,13 @@
 @import "../../../../styles/colors.scss";
 
 .newsElementContainer {
-  flex: 1 1;
-  display: flex;
+  display: 'flex';
   flex-flow: column nowrap;
   border-bottom: 1px solid $gray300;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.5% 2%;
+  padding: 0.5% 5%;
+  word-break: break-all;
 }
 
 .newsElementRow {
@@ -35,9 +35,51 @@
   display: inline-flex;
 }
 
+.newsElementSubDataParentContainer {
+  flex-direction: column;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.newsElementSubDataContainer {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0;
+}
+
+.newsElementSubData {
+  color: $gray700;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsDataUrl {
+  color: $gray700;
+}
+
+.newsElementSubDataContainer div:first-of-type {
+  border-right: 1px solid $gray700;
+}
+
+
 .firstSideData {
   border-left: 0;
   padding-left: 0;
+}
+
+.newsElementTitle {
+  margin: 0;
+  padding: 0;
+}
+
+.newsElementTitleContainer {
+  padding: 0.5rem 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,5 +95,18 @@
   .newsElementSideData {
     align-items: center;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rowOnBig {
+    flex-direction: row;
+    display: flex;
+  }
+  .containerOnBig {
+    flex: 1;
+  }
+  .newsElementUrlContainer {
+    justify-content: flex-start;
+    padding: 1rem 0;
   }
 }

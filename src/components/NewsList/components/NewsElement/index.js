@@ -5,24 +5,23 @@ import styles from "./style.module.scss";
 class NewsElement extends React.PureComponent {
   render() {
     const { title, url, points, author } = this.props;
-    const displayData = [url, points, author];
     return (
       <div className={cs(styles.newsElementContainer)}>
-        <div className={cs(styles.newsElementRow)}>
-          <h4 className={cs(styles.newsElementRowTitle)}>{title}</h4>
+        <div className={cs(styles.rowOnBig)}>
+          <div className={cs(styles.newsElementTitleContainer)}>
+            <h4 className={cs(styles.newsElementTitle)}>{title}</h4>
+          </div>
+          <div
+            className={cs(styles.newsElementSubDataContainer, styles.rowOnBig, styles.containerOnBig)}
+          >
+            <div className={cs(styles.newsElementSubData)}>{author}</div>
+            <div className={cs(styles.newsElementSubData)}>{points}</div>
+          </div>
         </div>
-        <div className={cs(styles.newsElementRow)}>
-          {displayData.map((data, index) => (
-            <p
-              key={index}
-              className={cs([
-                styles.newsElementSideData,
-                index === 0 ? styles.firstSideData : false
-              ])}
-            >
-              {data}
-            </p>
-          ))}
+        <div className={cs(styles.newsElementSubDataContainer, styles.newsElementUrlContainer)}>
+          <a href={url} className={cs(styles.newsDataUrl)}>
+            {url}
+          </a>
         </div>
       </div>
     );
